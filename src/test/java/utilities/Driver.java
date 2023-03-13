@@ -53,11 +53,11 @@ public class Driver {
                     driver = new ChromeDriver(ops);
 
             }
-
+            driver.manage().window().maximize();
+            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
         }
 
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+
 
         return driver;
 
