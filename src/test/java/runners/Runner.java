@@ -8,9 +8,9 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/resources/features",
         glue = "stepdefinitions",
-        tags = "@wip",
-        dryRun = false
-
+        tags = "@Kadir",
+        dryRun = false,
+        plugin={"html:target\\cucumber-reports.html"}
 )
 
 public class Runner {
@@ -44,3 +44,7 @@ public class Runner {
             EKSIK ADIM YOKSA hic bir adimi calistirmadan TEST PASSED der
             buradaki test passed EKSİK ADIM YOK" anlamina gelmektedir
      */
+
+
+
+

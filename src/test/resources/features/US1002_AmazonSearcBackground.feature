@@ -2,7 +2,7 @@ Feature: US1002 Kullanici Background kullanarak Amazonda arama yapar
 
   Background:
     Given kullanici Amazon anasayfaya gider
-  @ilk
+  @Huseyin
   Scenario: TC04 Kullanici Amazonda Nutella aratir
     Then  arama kutusuna Nutella yazar ve enter tusuna basar
     And   arama sonuclarinin Nutella icerdigini test eder
