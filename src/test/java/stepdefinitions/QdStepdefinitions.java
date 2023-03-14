@@ -3,6 +3,7 @@ package stepdefinitions;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
+import org.openqa.selenium.WebDriver;
 import pages.QdPage;
 import utilities.ConfigReader;
 
@@ -43,5 +44,10 @@ public class QdStepdefinitions {
     @And("password olarak examples dan {string} girer")
     public void passwordOlarakExamplesDanGirer(String password) {
         qdPage.passwordKutusu.sendKeys(password);
+    }
+
+    @Then("cookiesleri kabul eder")
+    public void cookiesleriKabulEder() {
+        qdPage.quickKabulet.click();
     }
 }

@@ -16,13 +16,16 @@ public class QdPage {
     @FindBy(linkText = "Log in")
     public WebElement ilkLoginLinki;
 
+    @FindBy(linkText = "Accept")
+    public WebElement cookieTik;
+
     @FindBy(id="login-email")
     public WebElement emailKutusu;
 
     @FindBy(id="login-password")
     public WebElement passwordKutusu;
 
-    @FindBy(xpath = "//button[text()='Login']")
+    @FindBy(xpath = "//button[@class='btn red radius-5 mt-4 w-100']")
     public WebElement loginButonu;
 
     @FindBy(xpath = "//a[text()='Instructor']")

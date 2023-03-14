@@ -27,8 +27,7 @@ public class Driver {
     public static WebDriver driver;
 
         public static WebDriver getDriver(){
-            ChromeOptions ops = new ChromeOptions();
-            ops.addArguments("--remote-allow-origins=*");
+
 
         String istenenBrowser = ConfigReader.getProperty("browser");
 
@@ -49,14 +48,16 @@ public class Driver {
                     driver= new SafariDriver();
                     break;
                 default:
+                    ChromeOptions ops = new ChromeOptions();
+                    ops.addArguments("--remote-allow-origins=*");
                     WebDriverManager.chromedriver().setup();
                     driver = new ChromeDriver(ops);
 
             }
             driver.manage().window().maximize();
-            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
-        }
 
+        }
+            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 
 
         return driver;

@@ -1,3 +1,4 @@
+@regression @b
 Feature: US1003 Kullanici Amazonda parametre olarak yazdigi kelimeyi aratir
 
   Scenario: TC07 Kullanici parametre ile arama yaptirabilmeli
@@ -6,4 +7,4 @@ Feature: US1003 Kullanici Amazonda parametre olarak yazdigi kelimeyi aratir
     Then  amazonda "Samsung" icin arama yapar
     And   sonuclarin "Samsung" icerdigini test eder
     And   10 saniye bekler
-    And   sayfayi kapatir
+

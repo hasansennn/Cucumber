@@ -1,5 +1,6 @@
+@regression @b
 Feature: US1001 Kullanici Amazon sayfasinda arama yapar
-  @hasan
+
   Scenario: TC01 Kullanici Amazonda Nutella aratir
     Given kullanici Amazon anasayfaya gider
     Then  arama kutusuna Nutella yazar ve enter tusuna basar

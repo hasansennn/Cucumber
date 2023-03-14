@@ -1,6 +1,261 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="22.533" tests="2" skipped="0" failures="0" errors="0">
-<testcase classname="US1010 Herokuapp implicitly wait" name="TC14 kullanici implicitly wait ile gorevleri yapabilmeli" time="11.435">
+<testsuite name="Cucumber" time="223.047" tests="22" skipped="0" failures="2" errors="0">
+<testcase classname="US1006 Kullanici trendyol anasayfasinda smok test islemi yapar" name="TC10 Trendyol uygulamasina login menusunu test eder" time="12.124">
+<system-out><![CDATA[
+Given kullanici ilk once trendyol anasayfasina gider........................passed
+And 3 saniye bekler.........................................................passed
+Then trendyolda cookies butonuna tiklar.....................................passed
+Then Daha sonra login butonunu tiklar.......................................passed
+When gecerli email ve password girer........................................passed
+And giris yapilip yapilmadigini test eder...................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1001 Kullanici Amazon sayfasinda arama yapar" name="TC01 Kullanici Amazonda Nutella aratir" time="7.638">
+<system-out><![CDATA[
+Given kullanici Amazon anasayfaya gider.....................................passed
+Then arama kutusuna Nutella yazar ve enter tusuna basar.....................passed
+And arama sonuclarinin Nutella icerdigini test eder.........................passed
+And sayfayi kapatir.........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1001 Kullanici Amazon sayfasinda arama yapar" name="TC02 kullanici Amazonda Java aratir" time="8.542">
+<system-out><![CDATA[
+Given kullanici Amazon anasayfaya gider.....................................passed
+When arama kutusuna Java yazar ve enter tusuna basar........................passed
+Then arama sonuclarinin Java icerdigini test eder...........................passed
+And sayfayi kapatir.........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1001 Kullanici Amazon sayfasinda arama yapar" name="TC03 kullanici Amazonda Apple aratir" time="6.617">
+<system-out><![CDATA[
+Given kullanici Amazon anasayfaya gider.....................................passed
+When arama kutusuna Apple yazar ve enter tusuna basar.......................passed
+Then arama sonuclarinin Apple icerdigini test eder..........................passed
+And sayfayi kapatir.........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1002 Kullanici Background kullanarak Amazonda arama yapar" name="TC04 Kullanici Amazonda Nutella aratir" time="7.782">
+<system-out><![CDATA[
+Given kullanici Amazon anasayfaya gider.....................................passed
+Then arama kutusuna Nutella yazar ve enter tusuna basar.....................passed
+And arama sonuclarinin Nutella icerdigini test eder.........................passed
+And sayfayi kapatir.........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1002 Kullanici Background kullanarak Amazonda arama yapar" name="TC05 kullanici Amazonda Java aratir" time="8.507">
+<system-out><![CDATA[
+Given kullanici Amazon anasayfaya gider.....................................passed
+When arama kutusuna Java yazar ve enter tusuna basar........................passed
+Then arama sonuclarinin Java icerdigini test eder...........................passed
+And sayfayi kapatir.........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1002 Kullanici Background kullanarak Amazonda arama yapar" name="TC06 kullanici Amazonda Apple aratir" time="17.946">
+<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#twotabsearchtextbox&quot;}
+  (Session info: chrome=111.0.5563.65)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [293c493bbc21a368501c084adceaff54, findElement {using=id, value=twotabsearchtextbox}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Program Files (x86)\scop...}, goog:chromeOptions: {debuggerAddress: localhost:51504}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51504/devtoo..., se:cdpVersion: 111.0.5563.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 293c493bbc21a368501c084adceaff54">
+<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#twotabsearchtextbox"}
+  (Session info: chrome=111.0.5563.65)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [293c493bbc21a368501c084adceaff54, findElement {using=id, value=twotabsearchtextbox}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Program Files (x86)\scop...}, goog:chromeOptions: {debuggerAddress: localhost:51504}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51504/devtoo..., se:cdpVersion: 111.0.5563.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 293c493bbc21a368501c084adceaff54
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy24.sendKeys(Unknown Source)
+	at stepdefinitions.AmazonStepdefinitions.aramaKutusunaAppleYazarVeEnterTusunaBasar(AmazonStepdefinitions.java:50)
+	at ✽.arama kutusuna Apple yazar ve enter tusuna basar(file:///C:/PROJELER/com.team108_Cucumber/src/test/resources/features/US1002_AmazonSearcBackground.feature:20)
+]]>
+</failure>
+<system-out><![CDATA[
+Given kullanici Amazon anasayfaya gider.....................................passed
+When arama kutusuna Apple yazar ve enter tusuna basar.......................failed
+Then arama sonuclarinin Apple icerdigini test eder..........................skipped
+And sayfayi kapatir.........................................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="US1003 Kullanici Amazonda parametre olarak yazdigi kelimeyi aratir" name="TC07 Kullanici parametre ile arama yaptirabilmeli" time="16.94">
+<system-out><![CDATA[
+Given kullanici Amazon anasayfaya gider.....................................passed
+Then amazonda "Samsung" icin arama yapar....................................passed
+And sonuclarin "Samsung" icerdigini test eder...............................passed
+And 10 saniye bekler........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1004 Kulanici parametre olarak girdigi Url'e gider" name="TC08 Kullanici url'i parametre olarak girebilmeli" time="7.658">
+<system-out><![CDATA[
+Given kullanici "qdUrl" anasayfaya gider....................................passed
+And 3 saniye bekler.........................................................passed
+Then "qdUrl" sayfasina gittigini test eder..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1005 Kullanici amazonda urun aratip 2. urun detaylarini test eder" name="TC09 Kullanici arama sonuclarinda istedigi urunu test edebilmeli" time="16.342">
+<system-out><![CDATA[
+Given kullanici "amazonUrl" anasayfaya gider................................passed
+When amazonda "Nutella" icin arama yapar....................................passed
+And 5 saniye bekler.........................................................passed
+And 3.urune gider...........................................................passed
+Then urun isminin "Nutella" icerdigini test eder............................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1006 Kullanici Scenario outline ile birden fazla kelime aratır" name="TC10 Amazon coklu urun testi - Example #1.1" time="7.767">
+<system-out><![CDATA[
+Given kullanici "amazonUrl" anasayfaya gider................................passed
+Then amazonda "Nutella" icin arama yapar....................................passed
+And sonuclarin "Nutella" icerdigini test eder...............................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1006 Kullanici Scenario outline ile birden fazla kelime aratır" name="TC10 Amazon coklu urun testi - Example #1.2" time="6.606">
+<system-out><![CDATA[
+Given kullanici "amazonUrl" anasayfaya gider................................passed
+Then amazonda "Java" icin arama yapar.......................................passed
+And sonuclarin "Java" icerdigini test eder..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1006 Kullanici Scenario outline ile birden fazla kelime aratır" name="TC10 Amazon coklu urun testi - Example #1.3" time="6.665">
+<system-out><![CDATA[
+Given kullanici "amazonUrl" anasayfaya gider................................passed
+Then amazonda "Samsung" icin arama yapar....................................passed
+And sonuclarin "Samsung" icerdigini test eder...............................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1006 Kullanici Scenario outline ile birden fazla kelime aratır" name="TC10 Amazon coklu urun testi - Example #1.4" time="5.696">
+<system-out><![CDATA[
+Given kullanici "amazonUrl" anasayfaya gider................................passed
+Then amazonda "Apple" icin arama yapar......................................passed
+And sonuclarin "Apple" icerdigini test eder.................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1006 Kullanici Scenario outline ile birden fazla kelime aratır" name="TC10 Amazon coklu urun testi - Example #1.5" time="17.89">
+<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#twotabsearchtextbox&quot;}
+  (Session info: chrome=111.0.5563.65)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [675d173d1407acfdddabd32bb2744d76, findElement {using=id, value=twotabsearchtextbox}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Program Files (x86)\scop...}, goog:chromeOptions: {debuggerAddress: localhost:52031}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52031/devtoo..., se:cdpVersion: 111.0.5563.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 675d173d1407acfdddabd32bb2744d76">
+<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#twotabsearchtextbox"}
+  (Session info: chrome=111.0.5563.65)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [675d173d1407acfdddabd32bb2744d76, findElement {using=id, value=twotabsearchtextbox}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Program Files (x86)\scop...}, goog:chromeOptions: {debuggerAddress: localhost:52031}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52031/devtoo..., se:cdpVersion: 111.0.5563.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 675d173d1407acfdddabd32bb2744d76
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy24.sendKeys(Unknown Source)
+	at stepdefinitions.AmazonStepdefinitions.amazondaIcinAramaYapar(AmazonStepdefinitions.java:64)
+	at ✽.amazonda "Furkan" icin arama yapar(file:///C:/PROJELER/com.team108_Cucumber/src/test/resources/features/US1006_ScenarioOutlineileAmazonArama.feature:7)
+]]>
+</failure>
+<system-out><![CDATA[
+Given kullanici "amazonUrl" anasayfaya gider................................passed
+Then amazonda "Furkan" icin arama yapar.....................................failed
+And sonuclarin "Furkan" icerdigini test eder................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="US1008 Scenario Outline ile coklu negative login test" name="TC11 kullanici verilen listedeki kullanici isimleri ile giris yapamamali - Example #1.1" time="9.143">
+<system-out><![CDATA[
+Given kullanici "qdUrl" anasayfaya gider....................................passed
+Then 2 saniye bekler........................................................passed
+Then cookiesleri kabul eder.................................................passed
+Then ilk login linkine tiklar...............................................passed
+And username olarak examples dan "Hasan" girer..............................passed
+And password olarak examples dan "12344" girer..............................passed
+And login butonuna basar....................................................passed
+Then giris yapilamadigini test eder.........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1008 Scenario Outline ile coklu negative login test" name="TC11 kullanici verilen listedeki kullanici isimleri ile giris yapamamali - Example #1.2" time="9.105">
+<system-out><![CDATA[
+Given kullanici "qdUrl" anasayfaya gider....................................passed
+Then 2 saniye bekler........................................................passed
+Then cookiesleri kabul eder.................................................passed
+Then ilk login linkine tiklar...............................................passed
+And username olarak examples dan "Said" girer...............................passed
+And password olarak examples dan "645363" girer.............................passed
+And login butonuna basar....................................................passed
+Then giris yapilamadigini test eder.........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1008 Scenario Outline ile coklu negative login test" name="TC11 kullanici verilen listedeki kullanici isimleri ile giris yapamamali - Example #1.3" time="10.6">
+<system-out><![CDATA[
+Given kullanici "qdUrl" anasayfaya gider....................................passed
+Then 2 saniye bekler........................................................passed
+Then cookiesleri kabul eder.................................................passed
+Then ilk login linkine tiklar...............................................passed
+And username olarak examples dan "Eyup" girer...............................passed
+And password olarak examples dan "jskdbvk" girer............................passed
+And login butonuna basar....................................................passed
+Then giris yapilamadigini test eder.........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1008 Scenario Outline ile coklu negative login test" name="TC11 kullanici verilen listedeki kullanici isimleri ile giris yapamamali - Example #1.4" time="8.633">
+<system-out><![CDATA[
+Given kullanici "qdUrl" anasayfaya gider....................................passed
+Then 2 saniye bekler........................................................passed
+Then cookiesleri kabul eder.................................................passed
+Then ilk login linkine tiklar...............................................passed
+And username olarak examples dan "Fidan" girer..............................passed
+And password olarak examples dan "ytefv86" girer............................passed
+And login butonuna basar....................................................passed
+Then giris yapilamadigini test eder.........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1009 gecerli kullanici adi ve sifre ile sisteme giris" name="TC12 Gecerli username ve password ile basarili giris yapilabilmeli" time="10.284">
+<system-out><![CDATA[
+Given kullanici "qdUrl" anasayfaya gider....................................passed
+Then ilk login linkine tiklar...............................................passed
+And username olarak "qdGecerliUsername" girer...............................passed
+And password olarak "qdGecerliPassword" girer...............................passed
+And cookiesleri kabul eder..................................................passed
+And 2 saniye bekler.........................................................passed
+And login butonuna basar....................................................passed
+Then basarili olarak giris yapildigini test eder............................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1010 Herokuapp implicitly wait" name="TC14 kullanici implicitly wait ile gorevleri yapabilmeli" time="8.733">
 <system-out><![CDATA[
 Given kullanici "herokuUrl" anasayfaya gider................................passed
 Then AddElement butonuna basar..............................................passed
@@ -10,7 +265,7 @@ And Delete butonuna basarak butonu siler....................................pass
 Then Delete butonunun gorunmedigini test eder...............................passed
 ]]></system-out>
 </testcase>
-<testcase classname="US1011 WebUniversity Testi" name="TC15 Webuniversity sayfasinda istenen gorevleri yapar" time="10.915">
+<testcase classname="US1011 WebUniversity Testi" name="TC15 Webuniversity sayfasinda istenen gorevleri yapar" time="11.53">
 <system-out><![CDATA[
 Given kullanici "webUrl" anasayfaya gider...................................passed
 Then Login Portal gorununceye kadar asagi iner..............................passed
@@ -25,7 +280,6 @@ And Popup'ta cikan yazinin validation failed oldugunu test eder.............pass
 And Ok diyerek Popup'i kapatir..............................................passed
 Then Ilk sayfaya geri doner.................................................passed
 And Ilk sayfaya donuldugunu test eder.......................................passed
-And tum sayfalari kapatir...................................................passed
 ]]></system-out>
 </testcase>
 </testsuite>
